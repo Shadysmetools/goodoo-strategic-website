@@ -1,0 +1,201 @@
+{
+  "title": "Goodoo AI Complete Development Roadmap & User Stories",
+  "subtitle": "Comprehensive MVP Development Strategy Across Three Strategic Phases",
+  "executiveSummary": {
+    "phase1": {
+      "title": "Phase 1: Foundation",
+      "description": "Core SaaS platform with basic meeting capture and AI interaction capabilities",
+      "deadline": "June 30, 2025"
+    },
+    "phase2": {
+      "title": "Phase 2: Enhancement",
+      "description": "Advanced transcription, bot features, and complete UI implementation",
+      "deadline": "July 15, 2025"
+    },
+    "phase3": {
+      "title": "Phase 3: Monetization",
+      "description": "Full intelligence hub with monetization, sharing, and project management",
+      "deadline": "August 15, 2025"
+    }
+  },
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "Phase 1: Core SaaS & Meeting Capture",
+      "deadline": "June 30, 2025",
+      "sprint": "Sprint 1.2: Initial SaaS Offering",
+      "features": [
+        "Prompting per Meeting: Implement AI prompting and response based on single meeting context",
+        "Mass Upload: Bulk upload multiple source documents to project"
+      ],
+      "userStories": [
+        "As a Project Manager, I want to ask AI questions about a specific meeting so that I can get contextual answers",
+        "As a Project Manager, I want to upload multiple documents at once so that I can quickly add sources to my project"
+      ]
+    },
+    {
+      "id": "phase-2",
+      "title": "Phase 2: Transcription & Bot Enhancements",
+      "deadline": "July 15, 2025",
+      "sprints": [
+        {
+          "id": "sprint-1.3",
+          "title": "Sprint 1.3 - Performance",
+          "feature": "Semi-instant meeting transcription using bot"
+        },
+        {
+          "id": "sprint-1.5",
+          "title": "Sprint 1.5 - Invite Bot to Ad-Hoc Meetings",
+          "feature": "Invite Goodoo Bot to unscheduled meetings"
+        },
+        {
+          "id": "sprint-1.6",
+          "title": "Sprint 1.6 - UI Design",
+          "feature": "Full UI design for all customer-facing pages"
+        }
+      ],
+      "removedFeature": "AI Renaming feature removed from scope",
+      "userStories": [
+        "As a Project Manager, I want fast transcription so that I can quickly access meeting content",
+        "As a Project Manager, I want to invite the bot to impromptu meetings so that I don't lose important discussions",
+        "As a Project Manager, I want a beautiful, intuitive interface so that I can easily navigate the platform"
+      ]
+    },
+    {
+      "id": "phase-3",
+      "title": "Phase 3: Monetization & Full Intelligence Hub",
+      "deadline": "August 15, 2025",
+      "sprints": [
+        {
+          "id": "sprint-1.7",
+          "title": "Sprint 1.7 - Stripe Payment Integration",
+          "feature": "Handle user subscriptions and payments"
+        },
+        {
+          "id": "sprint-1.8",
+          "title": "Sprint 1.8 - Private Sharing",
+          "feature": "Share specific chat conversations privately"
+        },
+        {
+          "id": "sprint-1.8-2",
+          "title": "Sprint 1.8 - HTML Artifact Preview",
+          "feature": "Preview generated HTML code artifacts"
+        },
+        {
+          "id": "sprint-1.9",
+          "title": "Sprint 1.9 - Video Database & UI",
+          "feature": "Backend database and Video Page UI"
+        },
+        {
+          "id": "sprint-2.0",
+          "title": "Sprint 2.0 - Project Intelligence Hub",
+          "features": [
+            "Project Chat Page: Full project-level chat across all sources",
+            "Artifact Sharing Control: Toggle artifacts between private and public",
+            "Add Sources: Include audio and video files as sources",
+            "Source Hyperlinks: Hyperlink to specific video and document sources"
+          ]
+        }
+      ],
+      "userStories": [
+        "As a Project Manager, I want to pay for premium features so that I can access advanced functionality",
+        "As a Project Manager, I want to share conversations privately so that I can collaborate with my team",
+        "As a Project Manager, I want to preview HTML artifacts so that I can see the generated content before sharing",
+        "As a Project Manager, I want to manage my video library so that I can organize and access recordings easily",
+        "As a Project Manager, I want to chat with my entire project so that I can get answers from all sources",
+        "As a Project Manager, I want to control artifact privacy so that I can share appropriately with different audiences",
+        "As a Project Manager, I want to add audio and video sources so that I can include all types of content",
+        "As a Project Manager, I want to link to specific sources so that I can reference exact moments in conversations"
+      ]
+    }
+  ],
+  "developmentTimeline": [
+    {
+      "phase": "Phase 1",
+      "sprint": "1.2",
+      "keyFeatures": "Prompting per Meeting, Mass Upload",
+      "deadline": "June 30, 2025"
+    },
+    {
+      "phase": "Phase 2",
+      "sprint": "1.3-1.6",
+      "keyFeatures": "Performance, Ad-Hoc Bot, UI Design",
+      "deadline": "July 15, 2025"
+    },
+    {
+      "phase": "Phase 3",
+      "sprint": "1.7-2.0",
+      "keyFeatures": "Stripe Integration, Sharing, Intelligence Hub",
+      "deadline": "August 15, 2025"
+    }
+  ],
+  "userStoriesSummary": [
+    {
+      "phase": "Phase 1 (Foundation)",
+      "sprint": "Sprint 1.2",
+      "userStoriesCount": 2,
+      "percentage": 13.3
+    },
+    {
+      "phase": "Phase 2 (Enhancement)",
+      "sprint": "Sprint 1.3-1.6",
+      "userStoriesCount": 3,
+      "percentage": 20.0
+    },
+    {
+      "phase": "Phase 3 (Monetization)",
+      "sprint": "Sprint 1.7-2.0",
+      "userStoriesCount": 10,
+      "percentage": 66.7
+    }
+  ],
+  "highComplexityTask": {
+    "title": "Real-time Screen Recording",
+    "description": "This feature is identified as a high-difficulty task and will require a separate technical investigation before being scheduled into a sprint."
+  },
+  "sprintBreakdown": {
+    "sprint1_5": {
+      "title": "Sprint 1.5: Core Google Meet Flow & Transcript Engine",
+      "goals": [
+        "Establish meeting recording pipeline for Google Meet",
+        "Implement real-time transcription (2–3 minute chunks)",
+        "Assign video to project"
+      ],
+      "scope": [
+        "Chrome Extension (manual/auto Google Meet join)",
+        "Goodoo Bot joins and records screen/audio",
+        "Video Page with playback + live transcript chunks",
+        "Assign to existing/new project from Video Page",
+        "Project Page initializes with video page",
+        "Prompting per video",
+        "Hyperlink per video in the chat page",
+        "Bulk upload"
+      ],
+      "deliverables": [
+        "End-to-end: Record Meet > transcribe > video page > assign project",
+        "Transcript viewer with navigation and speaker ID"
+      ]
+    },
+    "sprint2": {
+      "title": "Sprint 2: Project Intelligence, Sources & UI",
+      "goals": [
+        "Enable source-level AI interaction and advanced project tools",
+        "Improve project page as content hub",
+        "UI cohesion across Home, Project, and Video pages"
+      ],
+      "scope": [
+        "Source selection widget (upload, organize, tag)",
+        "AI contextual chat (Gemini-style) based on selected sources",
+        "Canvas panel with transcript + summary + action items",
+        "Public sharing of projects (view-only link)",
+        "Home Page project tiles and navigation polish"
+      ],
+      "deliverables": [
+        "Add source to project + AI chat answers with citations",
+        "Canvas output: summary, actions, transcript",
+        "Public share link per project",
+        "Final UI enhancements for MVP pages"
+      ]
+    }
+  }
+} 

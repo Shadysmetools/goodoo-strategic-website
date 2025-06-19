@@ -1,0 +1,127 @@
+{
+  "title": "User Persona Profiles",
+  "subtitle": "Detailed Customer Profiles for Goodoo.ai",
+  "primaryPersona": {
+    "id": "pieter-janssen",
+    "name": "Pieter Janssen",
+    "title": "Odoo Project Manager",
+    "role": "Expert SaaS Product Consultant & Strategist",
+    "demographics": {
+      "age": "32-45",
+      "location": "Benelux region (e.g., Belgium, Netherlands)",
+      "experience": "5+ years in ERP implementation, 2+ as a PM",
+      "companySize": "Works for an Odoo Partner or a mid-sized company using Odoo",
+      "techSavviness": "High. Comfortable with various SaaS tools but frustrated by tool fragmentation"
+    },
+    "quote": "I feel like I live in back-to-back meetings. By the end of the week, I can't remember who approved which change or the exact steps I showed the client on Tuesday. It's all a blur, and the documentation is always a week behind.",
+    "motivations": [
+      "Delivering projects on time and on budget",
+      "High client satisfaction and retention",
+      "Being seen as an expert and trusted advisor",
+      "Finding ways to work smarter, not harder"
+    ],
+    "goals": [
+      "To maintain a perfect, up-to-date memory of every client interaction and decision across multiple projects",
+      "To reduce the time spent on manual, tedious tasks like writing meeting minutes and creating training documentation",
+      "To quickly onboard new team members to a project without having to re-explain everything",
+      "To have a single source of truth for each project that both he and his clients can trust",
+      "To proactively answer client questions by referencing exact moments in previous demos"
+    ],
+    "painPoints": [
+      {
+        "title": "Project Amnesia",
+        "description": "Details from meetings (verbal agreements, on-screen demos) are lost almost immediately after the call ends"
+      },
+      {
+        "title": "Documentation Lag",
+        "description": "Manually creating step-by-step training guides or meeting summaries is time-consuming and often inaccurate because it relies on memory"
+      },
+      {
+        "title": "Context Switching Chaos",
+        "description": "Juggling multiple complex Odoo projects means details get mixed up, leading to confusion and errors"
+      },
+      {
+        "title": "He Said, She Said",
+        "description": "Disagreements arise over what was agreed upon because there is no easily searchable, objective record of conversations"
+      },
+      {
+        "title": "The What Was Said vs. What Was Shown Gap",
+        "description": "Standard audio transcripts miss the critical context of what was happening on-screen during a demo, which is often more important than the words spoken"
+      }
+    ],
+    "wateringHoles": [
+      "Events: Odoo annual events (like the one in Belgium) are a primary source for networking and discovering new tools",
+      "Online Communities: Odoo official forums, LinkedIn Groups for Odoo Professionals, specific subreddits",
+      "Publications: Follows Odoo-focused blogs and publications",
+      "Word of Mouth: Trusts recommendations from other Odoo partners and senior PMs in his network"
+    ],
+    "howGoodooHelps": [
+      {
+        "from": "Project Amnesia",
+        "to": "Total Recall",
+        "description": "Goodoo.ai provides a perfect, queryable memory of every meeting, capturing both audio and visual context. Pieter can instantly find the exact moment a client approved a feature or the specific configuration he demonstrated last week."
+      },
+      {
+        "from": "Tedious Documentation",
+        "to": "Instant Artifacts",
+        "description": "Instead of spending hours writing guides, Pieter can now generate a detailed, step-by-step visual training document in minutes, directly from the meeting recording where he performed the demo. This saves time and eliminates errors."
+      },
+      {
+        "from": "Context Switching",
+        "to": "Project Focus",
+        "description": "With a dedicated, intelligent workspace for each project, Pieter can immerse himself in one project at a time. The AI is his dedicated project historian, ensuring he never mixes up details between Client A and Client B again."
+      },
+      {
+        "from": "Ambiguity",
+        "to": "Single Source of Truth",
+        "description": "When a disagreement arises, there's no more debate. Pieter can pull up the transcript, linked directly to the video, showing exactly what was said and shown, providing indisputable clarity for both his team and the client."
+      }
+    ]
+  },
+  "secondaryPersonas": [
+    {
+      "id": "ux-designer",
+      "name": "Sarah Chen",
+      "title": "UX/UI Designer & Researcher",
+      "demographics": {
+        "age": "28-35",
+        "location": "Global (remote work)",
+        "experience": "3-7 years in UX/UI design",
+        "companySize": "Works for agencies or product companies",
+        "techSavviness": "Very high, early adopter of new tools"
+      },
+      "painPoints": [
+        "Conducting user interviews and needing to synthesize findings quickly",
+        "Sharing research insights with stakeholders across different time zones",
+        "Creating visual documentation of user flows and processes"
+      ],
+      "goals": [
+        "Streamline the user research process",
+        "Create compelling visual artifacts from research sessions",
+        "Share findings effectively with remote teams"
+      ]
+    },
+    {
+      "id": "consultant",
+      "name": "Marcus Rodriguez",
+      "title": "Management Consultant",
+      "demographics": {
+        "age": "30-40",
+        "location": "Global (travels frequently)",
+        "experience": "5-10 years in consulting",
+        "companySize": "Works for consulting firms or independently",
+        "techSavviness": "High, but values simplicity and reliability"
+      },
+      "painPoints": [
+        "Documenting client work and creating deliverables",
+        "Managing multiple client projects simultaneously",
+        "Ensuring knowledge transfer between team members"
+      ],
+      "goals": [
+        "Create professional deliverables efficiently",
+        "Maintain client relationships through better documentation",
+        "Scale consulting practice through better knowledge management"
+      ]
+    }
+  ]
+} 

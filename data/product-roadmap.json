@@ -1,0 +1,145 @@
+{
+  "title": "Goodoo.ai Product Roadmap",
+  "subtitle": "A 12-Month Strategic Plan for a Market-Leading Launch",
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "Months 1-3 (Q3 2025)",
+      "subtitle": "MVP Hardening & Beta Readiness",
+      "description": "Transition from a functional prototype to a stable, polished, and sellable Minimum Viable Product. The primary focus is on core functionality, reliability, and user experience to ensure a successful initial launch at the Odoo event and for the first 500 users.",
+      "coreFocus": "Stability & Reliability",
+      "initiatives": [
+        {
+          "title": "Chrome Extension Polish",
+          "items": [
+            "Smart Recording Logic: Perfect auto-start/stop based on actual meeting activity",
+            "UI/UX Implementation: Finalize Loom-like UI for intuitive user control"
+          ]
+        },
+        {
+          "title": "Core Platform Hardening",
+          "items": [
+            "End-to-End User Flow: Ensure a seamless experience from recording to project-level chat",
+            "Visual Artifact Generation (Mocked Backend): Implement the UI for generating step-by-step guides from visual transcripts",
+            "Project Contextual Chat: Solidify the ability to select a video/source and have the chat contextually respond to it"
+          ]
+        },
+        {
+          "title": "Infrastructure & Onboarding",
+          "items": [
+            "Freemium Model Implementation: Build logic for the 2-hour visual transcription limit",
+            "Basic User Onboarding: Create a simple, guided setup process"
+          ]
+        }
+      ],
+      "successMetrics": [
+        "A stable MVP ready for the Odoo event in September",
+        "The core user flow is reliable and intuitive for new users",
+        "Successful internal validation by the team (Shady, Hassan, Sara)"
+      ]
+    },
+    {
+      "id": "phase-2",
+      "title": "Months 4-6 (Q4 2025)",
+      "subtitle": "Launch, Feedback & Iteration",
+      "description": "Successfully launch at the Odoo event, onboard the first cohort of beta users, and aggressively iterate based on real-world feedback. The focus shifts from core features to user activation and demonstrating the core value proposition of the 'project memory'.",
+      "coreFocus": "User Feedback & Activation",
+      "initiatives": [
+        {
+          "title": "Beta User Onboarding & Support",
+          "items": [
+            "High-Touch Onboarding: Personally onboard the first 100 beta users to maximize activation",
+            "Feedback Collection System: Implement a robust system to gather qualitative and quantitative data"
+          ]
+        },
+        {
+          "title": "Visual Artifact Engine (V1)",
+          "items": [
+            "Live AI Integration: Connect the frontend artifact generation UI to a live AI backend",
+            "Export Functionality: Allow users to export generated guides as PDF or Markdown"
+          ]
+        },
+        {
+          "title": "Monetization & Billing",
+          "items": [
+            "Subscription & Credit System: Fully implement the payment gateway for the Basic/Professional tiers and credit top-ups"
+          ]
+        }
+      ],
+      "successMetrics": [
+        "Onboard 100+ active beta users",
+        "First paying customers acquired",
+        "A prioritized backlog of feature requests based on validated user needs",
+        "Clear data on feature usage, especially visual transcription and artifact generation"
+      ]
+    },
+    {
+      "id": "phase-3",
+      "title": "Months 7-9 (Q1 2026)",
+      "subtitle": "Expansion & Intelligence",
+      "description": "Move beyond the initial feature set to deepen the product's intelligence and expand its integration capabilities. The focus is on making the platform indispensable for existing users and attractive to adjacent markets.",
+      "coreFocus": "Intelligence & Integration",
+      "initiatives": [
+        {
+          "title": "Platform Expansion",
+          "items": [
+            "Zoom/Microsoft Teams Integration: Expand the core recording and transcription functionality to other major meeting platforms"
+          ]
+        },
+        {
+          "title": "Enhanced Intelligence",
+          "items": [
+            "Cross-Project Memory (V1): Begin developing capabilities for the AI to reference knowledge across different projects",
+            "AI-Powered Search: Implement a semantic search feature that can find specific moments, decisions, or actions across all meetings within a project"
+          ]
+        },
+        {
+          "title": "Collaboration Features",
+          "items": [
+            "Team Workspaces: Introduce the ability to invite team members to collaborate on projects",
+            "Public Sharing Links: Allow users to share view-only versions of projects or specific artifacts"
+          ]
+        }
+      ],
+      "successMetrics": [
+        "Increased user retention and engagement metrics",
+        "Successful acquisition of pilot users from non-Odoo segments",
+        "A platform that is demonstrably 'stickier' and more integrated into the user's workflow"
+      ]
+    },
+    {
+      "id": "phase-4",
+      "title": "Months 10-12 (Q2 2026)",
+      "subtitle": "Scaling & Automation",
+      "description": "Focus on scalability, automation, and preparing the product and team for significant user growth. The goal is to refine the engine, automate workflows, and build out enterprise-ready features.",
+      "coreFocus": "Scalability & Automation",
+      "initiatives": [
+        {
+          "title": "Enterprise Readiness",
+          "items": [
+            "Advanced User Permissions: Develop role-based access control for teams",
+            "Enterprise Billing & Custom Deals: Build the infrastructure to manage custom enterprise contracts"
+          ]
+        },
+        {
+          "title": "Workflow Automation",
+          "items": [
+            "Task Management Integration: Allow AI-identified action items to be pushed directly to popular PM tools",
+            "Automated Report Generation: Enable users to schedule recurring reports or summaries based on project activity"
+          ]
+        },
+        {
+          "title": "Performance & Scalability",
+          "items": [
+            "Infrastructure Optimization: Refactor and optimize backend services to handle a larger volume of concurrent users and data processing"
+          ]
+        }
+      ],
+      "successMetrics": [
+        "A scalable platform ready for a public, mass-market launch",
+        "A clear path to landing the first enterprise-level clients",
+        "Product-market fit validated with strong retention and initial expansion revenue"
+      ]
+    }
+  ]
+} 

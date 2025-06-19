@@ -1,0 +1,230 @@
+{
+  "title": "Goodoo.ai: 1-Year Product & Strategy Master Plan",
+  "version": "1.0",
+  "date": "June 17, 2025",
+  "author": "Shady, Chief Product Officer (CPO)",
+  "status": "Draft for CEO Review",
+  "executiveSummary": {
+    "vision": "To become the indispensable AI-powered partner for teams, transforming conversations and ideas into actionable, visual knowledge that drives project success.",
+    "mission": "To empower teams to unlock the full potential of their collective intelligence by seamlessly capturing, understanding, and visualizing their work.",
+    "coreProblem": "Teams struggle with 'knowledge loss.' Critical information from meetings and discussions is often forgotten, poorly documented, or siloed. This leads to misalignment, wasted time, and repeated work. Goodoo.ai solves this by creating a 'living brain' for every project, ensuring valuable insights are captured and made actionable.",
+    "strategicGoals": [
+      {
+        "title": "Achieve Product-Market Fit (PMF)",
+        "description": "Validate that our core product delivers significant value to a defined market segment, demonstrated by strong user engagement, retention, and a willingness to pay."
+      },
+      {
+        "title": "Establish a Foundation for Scalable Growth",
+        "description": "Build the necessary product features, business models, and operational capabilities to support efficient customer acquisition and expansion."
+      },
+      {
+        "title": "Cultivate a High-Performing, Customer-Centric Product Culture",
+        "description": "Embed a deep understanding of our users' needs throughout the organization to guide all product development efforts."
+      }
+    ]
+  },
+  "kpis": {
+    "yearEndTargets": {
+      "monthlyRecurringRevenue": {
+        "target": 5000,
+        "unit": "USD",
+        "strategicGoal": "Scalable Growth"
+      },
+      "month1UserRetention": {
+        "target": 40,
+        "unit": "%",
+        "strategicGoal": "Product-Market Fit"
+      },
+      "netPromoterScore": {
+        "target": 40,
+        "unit": "score",
+        "strategicGoal": "Product-Market Fit"
+      },
+      "ltvToCacRatio": {
+        "target": 3,
+        "unit": "ratio",
+        "strategicGoal": "Scalable Growth"
+      },
+      "powerUserPercentage": {
+        "target": 15,
+        "unit": "%",
+        "strategicGoal": "Product-Market Fit"
+      }
+    }
+  },
+  "productStrategy": {
+    "corePillars": [
+      {
+        "title": "Capture",
+        "description": "Make it effortless for users to record the audio and visual data from their meetings and work sessions."
+      },
+      {
+        "title": "Understand",
+        "description": "Use AI to transcribe, summarize, and analyze the captured content, identifying key decisions, action items, and insights."
+      },
+      {
+        "title": "Visualize & Act",
+        "description": "Transform the understood information into intuitive, actionable artifacts like step-by-step guides, project plans, and searchable knowledge bases."
+      }
+    ],
+    "targetAudience": {
+      "primary": "Small to medium-sized tech-enabled businesses (10-100 employees)",
+      "segments": [
+        {
+          "title": "Product & Project Managers",
+          "description": "Who need to keep teams aligned and document processes."
+        },
+        {
+          "title": "UX/UI Designers & Researchers",
+          "description": "Who conduct user interviews and need to synthesize findings."
+        },
+        {
+          "title": "Consultants & Agencies",
+          "description": "Who need to document client work and create deliverables."
+        }
+      ]
+    }
+  },
+  "quarterlyRoadmap": [
+    {
+      "quarter": "Q1",
+      "period": "Months 1-3 (Q3 2025)",
+      "theme": "Activation & Engagement",
+      "primaryGoal": "Validate that the MVP solves the core problem and that users are engaging with key features. Success is measured by usage, not revenue.",
+      "keyInitiatives": [
+        {
+          "title": "Onboarding Optimization",
+          "description": "Develop a frictionless onboarding flow that guides new users to the 'aha!' moment of generating their first visual artifact."
+        },
+        {
+          "title": "Core Feature Refinement",
+          "description": "Based on user feedback, improve the stability and usability of meeting recording, transcription accuracy, and artifact generation."
+        },
+        {
+          "title": "Beta User Feedback Loop",
+          "description": "Implement a robust system for collecting, analyzing, and acting on feedback from our initial beta users."
+        }
+      ],
+      "kpis": {
+        "activationRate": {
+          "target": 60,
+          "unit": "%"
+        },
+        "visualArtifactGenerationRate": {
+          "target": 40,
+          "unit": "%"
+        },
+        "weeklyActiveUsers": {
+          "target": 70,
+          "unit": "users"
+        }
+      }
+    },
+    {
+      "quarter": "Q2",
+      "period": "Months 4-6 (Q4 2025)",
+      "theme": "Monetization & Retention",
+      "primaryGoal": "Prove that users find enough value in the product to pay for it and continue using it over time.",
+      "keyInitiatives": [
+        {
+          "title": "Pricing & Packaging Launch",
+          "description": "Introduce a simple, value-based pricing model (e.g., Freemium with paid tiers)."
+        },
+        {
+          "title": "Billing & Subscription Integration",
+          "description": "Implement a secure and easy-to-use system for managing subscriptions and payments."
+        },
+        {
+          "title": "Stickiness Features",
+          "description": "Develop features that increase the product's value over time, such as global search across all projects and basic integrations with tools like Slack or Trello."
+        }
+      ],
+      "kpis": {
+        "monthlyRecurringRevenue": {
+          "target": 1000,
+          "unit": "USD"
+        },
+        "freeToPaidConversionRate": {
+          "target": 5,
+          "unit": "%"
+        },
+        "month1UserRetention": {
+          "target": 40,
+          "unit": "%"
+        },
+        "netPromoterScore": {
+          "target": 40,
+          "unit": "score"
+        }
+      }
+    },
+    {
+      "quarter": "Q3",
+      "period": "Months 7-9 (Q1 2026)",
+      "theme": "Product-Market Fit & Expansion",
+      "primaryGoal": "Deepen engagement and confirm product-market fit by tracking how integral Goodoo.ai is becoming to user workflows.",
+      "keyInitiatives": [
+        {
+          "title": "Advanced Collaboration Features",
+          "description": "Introduce features like commenting on artifacts, sharing projects with external stakeholders, and assigning action items."
+        },
+        {
+          "title": "Chat with Project Enhancement",
+          "description": "Improve the AI's ability to answer complex questions about a project's history and content, making it a true project expert."
+        },
+        {
+          "title": "Usage-Based Upsells",
+          "description": "Introduce mechanisms for users to purchase additional recording credits or features, driving expansion revenue."
+        }
+      ],
+      "kpis": {
+        "powerUserPercentage": {
+          "target": 15,
+          "unit": "%"
+        },
+        "expansionMRR": {
+          "target": "Growing MoM",
+          "unit": "USD"
+        },
+        "collaborationRate": {
+          "target": 20,
+          "unit": "%"
+        }
+      }
+    },
+    {
+      "quarter": "Q4",
+      "period": "Months 10-12 (Q2 2026)",
+      "theme": "Scalable Growth & Business Health",
+      "primaryGoal": "Ensure the business is growing efficiently and is prepared for scaling.",
+      "keyInitiatives": [
+        {
+          "title": "Referral Program Development",
+          "description": "Encourage organic growth by rewarding users for inviting new teams."
+        },
+        {
+          "title": "Scale Infrastructure",
+          "description": "Ensure the platform's backend can handle a significant increase in user load and data storage."
+        },
+        {
+          "title": "Data & Analytics Deep Dive",
+          "description": "Analyze user behavior to understand the key drivers of LTV and identify opportunities to reduce CAC."
+        }
+      ],
+      "kpis": {
+        "customerLifetimeValue": {
+          "target": "Growing MoM",
+          "unit": "USD"
+        },
+        "customerAcquisitionCost": {
+          "target": "Decreasing QoQ",
+          "unit": "USD"
+        },
+        "ltvToCacRatio": {
+          "target": 3,
+          "unit": "ratio"
+        }
+      }
+    }
+  ]
+} 
