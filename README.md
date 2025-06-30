@@ -1,37 +1,112 @@
 # Goodoo.ai Strategic Website
 
-A comprehensive strategic framework showcase for Goodoo.ai, featuring detailed product roadmaps, go-to-market strategies, user personas, and development plans.
+A comprehensive strategic management platform for Goodoo.ai with role-based dashboards for CEO, CTO, and CPO.
 
 ## 🚀 Features
 
-- **Strategic Dashboard**: Overview of all strategic documents
-- **Product Roadmap**: 12-month strategic plan with phases and initiatives
-- **GTM Strategy**: Go-to-market strategy focusing on Odoo PMs
-- **Master Plan**: 1-year CPO strategy with KPIs and quarterly roadmaps
-- **User Personas**: Detailed customer profiles including primary and secondary personas
-- **Development Roadmap**: Technical implementation with sprint breakdowns
-- **Final Vision**: Complete product vision and future capabilities
+### Role-Based Navigation
+- **CEO Dashboard**: Strategic planning, business strategy, market analysis
+- **CTO Dashboard**: Technical architecture, development roadmap, technology stack
+- **CPO Dashboard**: Product vision, user personas, feature prioritization
 
-## 🛠️ Tech Stack
+### Dynamic Meeting System
+- **Current Date**: Sunday, June 22, 2025
+- **Meeting Schedule**: Every Monday at 10:00 AM EST
+- **Automatic Week Calculation**: System automatically calculates week numbers and date ranges
+- **HTML Artifact Support**: Easy weekly content updates with HTML artifacts
+
+### Document Management
+- **PDF Documents**: Strategic documents, presentations, reports
+- **HTML Artifacts**: Weekly meeting content that can be easily updated
+- **Search & Filter**: Advanced document search and categorization
+
+## 📅 Dynamic Meeting System
+
+### How It Works
+
+The meeting system is based on the current date (22/06/2025) and automatically generates:
+
+1. **Week Numbers**: Calculated based on the current year
+2. **Meeting Dates**: Every Monday starting from the next Monday after the current date
+3. **Meeting Status**: Automatically marks meetings as "Scheduled" or "Completed"
+4. **Artifact Links**: Dynamic links to meeting artifacts (PDFs and HTML pages)
+
+### Current Week Information
+
+- **Current Date**: Sunday, June 22, 2025
+- **Current Week**: Week 25 (June 16-22, 2025)
+- **Next Meeting**: Monday, June 23, 2025 (Week 26)
+- **Meeting Type**: Strategic Planning & Business Review
+
+### Updating the Current Date
+
+To update the current date, simply edit the `CURRENT_DATE` in `app/utils/dateUtils.ts`:
+
+```typescript
+export const CURRENT_DATE = new Date('2025-06-22') // Change this date
+```
+
+The system will automatically:
+- Recalculate all week numbers
+- Update meeting schedules
+- Adjust meeting statuses (Scheduled/Completed)
+- Generate new meeting artifacts
+
+### Weekly HTML Artifacts
+
+Each role has dedicated HTML artifact pages that can be updated weekly:
+
+- **CEO**: `/ceo/meetings/week-{weekNumber}/actions`
+- **CTO**: `/cto/meetings/week-{weekNumber}/security-assessment`
+- **CPO**: `/cpo/meetings/week-{weekNumber}/user-feedback`
+
+#### How to Update HTML Artifacts
+
+1. **Provide HTML Content**: Send your weekly HTML content
+2. **Automatic Update**: The content will be integrated into the appropriate week's page
+3. **Preserved Styling**: All navigation and styling will be maintained
+4. **Easy Access**: Content will be accessible through the meetings page
+
+## 🏗️ Project Structure
+
+```
+app/
+├── ceo/                    # CEO role pages
+│   ├── meetings/          # CEO meetings
+│   ├── documents/         # CEO documents
+│   └── page.tsx          # CEO dashboard
+├── cto/                    # CTO role pages
+│   ├── meetings/          # CTO meetings
+│   ├── documents/         # CTO documents
+│   └── page.tsx          # CTO dashboard
+├── cpo/                    # CPO role pages
+│   ├── meetings/          # CPO meetings
+│   ├── documents/         # CPO documents
+│   └── page.tsx          # CPO dashboard
+├── utils/
+│   └── dateUtils.ts      # Date utilities for meeting system
+└── page.tsx              # Homepage with role selection
+```
+
+## 🛠️ Technology Stack
 
 - **Framework**: Next.js 14 with App Router
 - **Styling**: Tailwind CSS
-- **Icons**: React Icons
-- **TypeScript**: Full type safety
-- **Deployment**: GitHub Pages with GitHub Actions
+- **Language**: TypeScript
+- **Deployment**: GitHub Pages (configured)
 
-## 📋 Prerequisites
+## 🚀 Getting Started
 
-- Node.js 18+ 
+### Prerequisites
+- Node.js 18+
 - npm or yarn
-- Git
 
-## 🚀 Quick Start
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/goodoo-strategic-website.git
-   cd goodoo-strategic-website
+   git clone <repository-url>
+   cd website-smetools
    ```
 
 2. **Install dependencies**
@@ -44,140 +119,86 @@ A comprehensive strategic framework showcase for Goodoo.ai, featuring detailed p
    npm run dev
    ```
 
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+4. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
 
-## 🏗️ Build for Production
+### Building for Production
 
 ```bash
 npm run build
+npm start
 ```
 
-## 🌐 Deployment
+## 📋 Meeting Schedule
 
-### GitHub Pages (Recommended)
+### CEO Meetings (Mondays)
+- Strategic Planning & Business Review
+- Financial Performance & Budget Review
+- Product Strategy & Roadmap Alignment
+- Market Analysis & Competitive Review
+- Team Performance & Leadership Review
+- Investor Relations & Board Update
+- Operational Excellence Review
+- Q3 2025 Strategic Planning
 
-1. **Create a GitHub repository**
-   - Go to [GitHub.com](https://github.com)
-   - Create a new repository named `goodoo-strategic-website`
-   - Make it **Public** for free hosting
+### CTO Meetings (Mondays)
+- Technical Architecture Review
+- Sprint Planning & Roadmap Review
+- Infrastructure & DevOps Planning
+- Code Review & Quality Assurance
+- Technology Stack Evaluation
+- Engineering Team Retrospective
+- Performance & Security Review
+- Q3 2025 Technical Planning
 
-2. **Add remote and push**
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/goodoo-strategic-website.git
-   git push -u origin main
-   ```
+### CPO Meetings (Mondays)
+- Product Roadmap Review & Planning
+- User Research & Persona Development
+- Feature Launch Planning & Go-to-Market
+- Product Analytics & Performance Review
+- Product Strategy Alignment
+- Q2 2025 Product Planning
+- User Experience & Design Review
+- Q3 2025 Product Strategy
 
-3. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Navigate to Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: `gh-pages` (will be created automatically)
-   - Save
+## 🔄 Weekly Updates
 
-4. **Automatic Deployment**
-   - The GitHub Actions workflow will automatically build and deploy on every push to `main`
-   - Your site will be available at: `https://YOUR_USERNAME.github.io/goodoo-strategic-website`
+### For HTML Artifacts
+1. Navigate to the appropriate role's meetings page
+2. Click on the "Action Items" or relevant HTML artifact link
+3. Provide your HTML content
+4. The content will be integrated into the page
 
-### Alternative: Vercel
+### For Document Updates
+1. Navigate to the role's documents page
+2. Use the upload or create functionality
+3. Documents will be categorized and searchable
 
-1. **Deploy to Vercel**
-   - Connect your GitHub repository to [Vercel](https://vercel.com)
-   - Vercel will automatically detect Next.js and deploy
-   - Get a custom domain and SSL certificate
+## 📊 Current Status
 
-## 📁 Project Structure
-
-```
-goodoo-strategic-website/
-├── app/                          # Next.js App Router pages
-│   ├── page.tsx                  # Dashboard
-│   ├── product-roadmap/          # Product roadmap page
-│   ├── gtm-strategy/            # GTM strategy page
-│   ├── master-plan/             # Master plan page
-│   ├── user-personas/           # User personas page
-│   ├── development-roadmap/     # Development roadmap page
-│   └── final-vision/            # Final vision page
-├── components/                   # Reusable components
-│   ├── Header.tsx
-│   ├── Navigation.tsx
-│   └── StrategicDashboard.tsx
-├── data/                        # JSON data files
-│   ├── product-roadmap.json
-│   ├── gtm-strategy.json
-│   ├── master-plan.json
-│   ├── user-personas.json
-│   ├── development-roadmap.json
-│   └── final-vision.json
-├── .github/workflows/           # GitHub Actions
-│   └── deploy.yml
-└── public/                      # Static assets
-```
-
-## 🎨 Customization
-
-### Adding New Strategic Documents
-
-1. **Create JSON data file** in `data/` directory
-2. **Create page component** in `app/` directory
-3. **Update navigation** in `components/Navigation.tsx`
-4. **Update dashboard** in `components/StrategicDashboard.tsx`
-
-### Styling
-
-- Uses Tailwind CSS for styling
-- Custom color scheme defined in `tailwind.config.js`
-- Responsive design with mobile-first approach
-
-## 🔧 Development
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-### Git Workflow
-
-- `main` - Production branch
-- `stage` - Staging branch
-- `test` - Testing branch
-
-## 📊 Data Structure
-
-All strategic data is stored in JSON files in the `data/` directory:
-
-- **Product Roadmap**: Phases, initiatives, success metrics
-- **GTM Strategy**: Core strategy, phases, initiatives
-- **Master Plan**: Executive summary, KPIs, quarterly roadmaps
-- **User Personas**: Primary and secondary persona profiles
-- **Development Roadmap**: Technical phases, sprints, user stories
-- **Final Vision**: Product vision, features, technical specifications
+- **Total Roles**: 3 (CEO, CTO, CPO)
+- **Weekly Meetings**: 3 (one per role)
+- **Document Categories**: 4 per role
+- **Meeting Artifacts**: 3 per meeting (PDF + PDF + HTML)
+- **Current Week**: Week 25 (June 16-22, 2025)
+- **Next Meeting**: Monday, June 23, 2025
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
-## 📝 License
+## 📄 License
 
-This project is private and proprietary to Goodoo.ai.
-
-## 👥 Team
-
-- **Product Lead**: Shady Al-halawani
-- **Email**: shady@smetools.io
-- **Company**: SMEtools Holdings
-
-## 🔗 Links
-
-- **Live Demo**: [https://goodo-test.vercel.app/](https://goodo-test.vercel.app/)
-- **Test Platform**: [https://goodo-test.vercel.app/](https://goodo-test.vercel.app/)
+This project is proprietary to Goodoo.ai.
 
 ---
 
-Built with ❤️ for Goodoo.ai 
+**Last Updated**: June 22, 2025  
+**Version**: 1.0.0  
+**Status**: Active Development 

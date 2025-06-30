@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import LogoutButton from './components/LogoutButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="min-h-screen bg-gradient-to-br from-secondary-50 to-secondary-100">
+          <div className="absolute top-4 right-6 z-50"><LogoutButton /></div>
           {children}
         </div>
       </body>
