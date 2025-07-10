@@ -1,29 +1,70 @@
-runtime: nodejs20
+runtime: custom
+env: flex
 service: default
 
 env_variables:
   NODE_ENV: production
-  JWT_SECRET: "your-secret-key-here"
+  JWT_SECRET: "your-super-secret-jwt-key-change-this-in-production"
 
+# Build configuration
+build_env_variables:
+  NODE_ENV: production
+
+# Instance configuration
+instance_class: F1
+
+# Automatic scaling configuration
+automatic_scaling:
+  min_instances: 0
+  max_concurrent_requests: 50
+
+# Resource allocation
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+# URL handlers for static files and routing
 handlers:
+  # Serve Next.js static files
   - url: /_next/static
     static_dir: .next/static
     secure: always
+    http_headers:
+      Cache-Control: public, max-age=31536000, immutable
 
+  # Serve public static files
   - url: /uploads
     static_dir: public/uploads
     secure: always
+    http_headers:
+      Cache-Control: public, max-age=3600
 
+  # Handle all other routes with the Next.js app
   - url: /.*
     script: auto
     secure: always
 
-automatic_scaling:
-  target_cpu_utilization: 0.65
-  min_instances: 0
-  max_instances: 10
+# Health check configuration
+liveness_check:
+  path: "/login"
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
 
-resources:
-  cpu: 1
-  memory_gb: 0.5
-  disk_size_gb: 10 
+readiness_check:
+  path: "/login"
+  check_interval_sec: 5
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+  app_start_timeout_sec: 600
+
+# Network configuration
+network:
+  session_affinity: true
+
+# VPC connector (if needed for database connections)
+# vpc_access_connector:
+#   name: projects/PROJECT_ID/locations/REGION/connectors/CONNECTOR_NAME 

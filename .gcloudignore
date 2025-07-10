@@ -5,7 +5,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Next.js build output
-#.next/
+# Keep .next for App Engine deployment
+# .next/
 out/
 
 # Environment files

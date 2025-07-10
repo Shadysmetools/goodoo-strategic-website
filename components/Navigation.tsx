@@ -49,7 +49,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="bg-white shadow-sm border-b border-secondary-200">
+    <nav className="bg-white shadow-sm border-b border-gray-200">
       <div className="container mx-auto px-4">
         <div className="flex space-x-8 overflow-x-auto">
           {navigationItems.map((item) => (
@@ -63,15 +63,15 @@ export default function Navigation() {
                 href={item.href}
                 className={`py-4 px-2 border-b-2 whitespace-nowrap transition-colors duration-200 ${
                   isActive(item.href)
-                    ? 'text-primary-600 border-primary-600'
-                    : 'border-transparent text-secondary-600 hover:text-primary-600 hover:border-primary-600'
+                    ? 'text-blue-600 border-blue-600'
+                    : 'border-transparent text-gray-600 hover:text-blue-600 hover:border-blue-600'
                 }`}
               >
                 {item.label}
               </Link>
               
               {/* Dropdown Menu */}
-              <div className={`absolute top-full left-0 mt-1 w-80 bg-white border border-secondary-200 rounded-lg shadow-lg z-50 transition-all duration-200 ${
+              <div className={`absolute top-full left-0 mt-1 w-80 bg-white border border-gray-200 rounded-lg shadow-lg z-50 transition-all duration-200 ${
                 activeDropdown === item.id ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}>
                 <div className="py-2">
@@ -79,8 +79,8 @@ export default function Navigation() {
                     <Link
                       key={subItem.id}
                       href={subItem.href}
-                      className={`block px-4 py-3 text-sm hover:bg-secondary-50 transition-colors duration-150 ${
-                        isActive(subItem.href) ? 'text-primary-600 bg-primary-50' : 'text-secondary-700'
+                      className={`block px-4 py-3 text-sm hover:bg-gray-50 transition-colors duration-150 ${
+                        isActive(subItem.href) ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                       }`}
                     >
                       <div className="font-medium">{subItem.label}</div>

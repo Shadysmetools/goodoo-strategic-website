@@ -1,10 +1,9 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-import LogoutButton from './components/LogoutButton'
-
-const inter = Inter({ subsets: ['latin'] })
+import { AuthProvider } from './contexts/AuthContext'
+import ConditionalLogoutButton from './components/ConditionalLogoutButton'
+import ErrorBoundary from './components/ErrorBoundary'
 
 export const metadata: Metadata = {
   title: 'Goodoo.ai Strategic Website',
@@ -18,11 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gradient-to-br from-secondary-50 to-secondary-100">
-          <div className="absolute top-4 right-6 z-50"><LogoutButton /></div>
-          {children}
-        </div>
+      <body className="font-sans">
+        <ErrorBoundary>
+          <AuthProvider>
+            <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+              <ConditionalLogoutButton />
+              {children}
+            </div>
+          </AuthProvider>
+        </ErrorBoundary>
       </body>
     </html>
   )

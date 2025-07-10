@@ -5,7 +5,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey';
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  if (pathname.startsWith('/login') || pathname.startsWith('/api/auth/login') || pathname.startsWith('/_next')) {
+  if (pathname.startsWith('/login') || pathname.startsWith('/api/auth/login') || pathname.startsWith('/api/auth/me') || pathname.startsWith('/_next')) {
     return NextResponse.next();
   }
   const token = request.cookies.get('token')?.value;
@@ -32,5 +32,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|api/auth/login|login).*)'],
+  matcher: ['/((?!_next|api/auth/login|api/auth/me|login).*)'],
 }; 

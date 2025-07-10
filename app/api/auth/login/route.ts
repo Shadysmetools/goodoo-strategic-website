@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
     }
     const token = jwt.sign({ email: user.email }, JWT_SECRET, { expiresIn: '7d' });
-    const response = NextResponse.json({ success: true });
+    const response = NextResponse.json({ success: true, email: user.email });
     response.cookies.set('token', token, { httpOnly: true, path: '/', sameSite: 'lax', maxAge: 60 * 60 * 24 * 7, secure: process.env.NODE_ENV === 'production' });
     return response;
   } catch (error) {

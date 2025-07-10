@@ -2,8 +2,19 @@
 
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useAuth } from '../contexts/AuthContext'
+import LoadingSpinner from '../components/LoadingSpinner'
 
 export default function CEODashboard() {
+  const { loading: authLoading } = useAuth();
+
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <LoadingSpinner size="lg" />
+      </div>
+    );
+  }
   const menuItems = [
     {
       title: 'Goodoo.ai: 1-Year Product & Strategy Master Plan',

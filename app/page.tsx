@@ -1,9 +1,21 @@
+"use client";
 import React from 'react'
 import Link from 'next/link'
 import Header from '../components/Header'
 import Navigation from '../components/Navigation'
+import { useAuth } from './contexts/AuthContext'
+import LoadingSpinner from './components/LoadingSpinner'
 
 export default function HomePage() {
+  const { loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <LoadingSpinner size="lg" />
+      </div>
+    );
+  }
   const roles = [
     {
       title: 'CEO',
